@@ -1,8 +1,16 @@
 <h1 align="center">
-    A Motorcycle Telemetry system with the goal of implementing a full digital twin for racing analysis
-  and design.
+    Digital Twin Telemetry
 </h1>
 
+<p align="center">
+  <img src="https://github.com/eescuspguepardo/Panthera/blob/main/PANTHERA_Logotype.png" alt=" " />
+</p>
+
+<p align="center">
+    A Motorcycle Telemetry system with the goal of implementing a full digital twin for racing analysis
+  and design, developed by students of the EESC - USP university in Brazil. Including a 3D visualization terminal 
+    for movement and forces, as well as a built-in processing suite to compute unmeasurable variables.
+</p>
 
 ## 🎯 The Goals
 
