@@ -20,3 +20,4 @@ Produce a seamless digital copy of our AR motoracing prototypes in real-time, us
 
 - [Thomas O'Kane - High Fidelity Modelling of Motorcycle Dynamics](https://mural.maynoothuniversity.ie/12555/)
 - [The MPU9250 use library](https://github.com/kriswiner/MPU9250)
+- [Top Tech Boy](https://toptechboy.com/)
