@@ -1,6 +1,6 @@
-#include "global/arduino/libraries/MPU9250/MPU9250.h"
+#include "MPU9250.h"
 
-#define MPU9250 mpu;
+MPU9250 mpu;
 
 void setup() {
     Serial.begin(115200);
