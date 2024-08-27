@@ -19,7 +19,7 @@ The sliding filter works by calculating the average of the last 10 sensor readin
 
 <br>
 
-- Gráfico obtido no SerialPlot após a aplicação do filtro:
+- Graph obtained in SerialPlot after applying the filter:
 
 <p align="center">
   <img src="serialplot.png" alt="Sensor performance in SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
