@@ -22,7 +22,7 @@ Isso permite eliminar picos anômalos que poderiam distorcer o resultado, propor
 
 <br>
 
-- Gráfico obtido no Serial Plot após a aplicação do filtro:
+- Gráfico obtido no SerialPlot após a aplicação do filtro:
 
 <p align="center">
   <img src="serialplot.png" alt="Foto do sensor funcionando no SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
