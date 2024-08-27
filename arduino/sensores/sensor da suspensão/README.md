@@ -26,7 +26,7 @@ O sensor de suspensão é altamente estável e preciso, e como tal, não foi nec
   <img src="serialplot.jpg" alt=""Foto do sensor funcionando no SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
 </p>
 
-## Código-Fonte - [potenciometro_linear_suspensao.ino](https://github.com/FelipeHCS0055/Panthera/blob/038e18e677863b50f995323609551db8d3136fe9/arduino/sensores/sensor%20da%20suspens%C3%A3o/potenciometro_linear_suspensao.ino)
+## Código-Fonte - [potenciometro_linear_suspensao.ino](arduino/sensores/sensor da suspensão/potenciometro_linear_suspensao.ino)
 
 ```cpp
 //------------------------------------------------------------
