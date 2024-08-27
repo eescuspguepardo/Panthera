@@ -1,23 +1,20 @@
-# Projeto de Sensor de Combustível com Filtro Deslizante e Descarte de Outliers
+# Fuel Sensor Project with Sliding Filter and Outlier Removal
 
-Este projeto consiste em um código para leitura de um sensor de potenciômetro linear instalado no tanque de combustível, desenvolvido por Gustavo Garcia e Felipe Silva, em 26/08/2024.
+This project consists of code for reading a linear potentiometer sensor installed in the fuel tank, developed by Gustavo Garcia and Felipe Silva on 08/26/2024.
 
-## Descrição do Projeto
+## Project Description
+Due to the presence of noise in the sensor readings, we decided to implement data processing to smooth out abrupt and anomalous variations in the fuel percentage vs. time graph. After testing different methods, the sliding filter with outlier removal proved to be the most effective.
 
-Devido à presença de ruídos nas leituras do sensor, decidimos implementar um tratamento de dados para suavizar as variações bruscas e anômalas no gráfico de porcentagem de combustível x tempo.
-Após testar diferentes métodos, o filtro deslizante com descarte de outliers se mostrou o mais eficaz.
+### Sliding Filter with Outlier Removal
 
-### Filtro Deslizante com Descarte de Outliers
+The sliding filter works by calculating the average of the last 10 sensor readings. Any reading that exceeds the predefined limits (780 and 995) is discarded and replaced by the last valid reading. This helps eliminate anomalous spikes that could distort the results, providing a more stable reading.
 
-O filtro deslizante funciona calculando a média das últimas 10 leituras do sensor. Qualquer leitura que ultrapasse os limites predefinidos (780 e 995) é descartada e substituída pela última leitura válida. 
-Isso permite eliminar picos anômalos que poderiam distorcer o resultado, proporcionando uma leitura mais estável.
+### Project Images
 
-### Imagens do Projeto
-
-- Foto do sensor:
+- Sensor photo:
 
 <p align="center">
-  <img src="sensor.jpg" alt="Sensor de Combustível" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
+  <img src="sensor.jpg" alt="Fuel Sensor" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
 </p>
 
 <br>
@@ -25,10 +22,10 @@ Isso permite eliminar picos anômalos que poderiam distorcer o resultado, propor
 - Gráfico obtido no SerialPlot após a aplicação do filtro:
 
 <p align="center">
-  <img src="serialplot.png" alt="Foto do sensor funcionando no SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
+  <img src="serialplot.png" alt="Sensor performance in SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
 </p>
 
-## [Código-Fonte](potenc_sensor_tanque_com_filtro_deslizante.ino)
+## [Source Code](potenc_sensor_tanque_com_filtro_deslizante.ino)
 
 ```cpp
 //------------------------------------------------------------
