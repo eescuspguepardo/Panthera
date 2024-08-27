@@ -20,7 +20,7 @@ O sensor de suspensão é altamente estável e preciso, e como tal, não foi nec
 
 <br>
 
-- Gráfico obtido no Serial Plot:
+- Gráfico obtido no SerialPlot:
 
 <p align="center">
   <img src="serialplot.jpg" alt=""Foto do sensor funcionando no SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
