@@ -28,7 +28,7 @@ Isso permite eliminar picos anômalos que poderiam distorcer o resultado, propor
   <img src="serialplot.png" alt="Foto do sensor funcionando no SerialPlot" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
 </p>
 
-## Código-Fonte - [potenc_sensor_tanque_com_filtro_deslizante.ino](https://github.com/FelipeHCS0055/Panthera/blob/b116dbf03148d3cc2484abcfd2806ca57b1418f5/arduino/sensores/sensor%20do%20tanque/potenc_sensor_tanque_com_filtro_deslizante.ino)
+## [Código-Fonte](potenc_sensor_tanque_com_filtro_deslizante.ino)
 
 ```cpp
 //------------------------------------------------------------
