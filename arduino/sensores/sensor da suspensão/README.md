@@ -12,7 +12,7 @@ The suspension sensor is highly stable and accurate, and as such, it was not nec
 
 ### Project Images
 
-- Suspension sensor photo (still need to take the sensor photo):
+- Suspension sensor photo:
 
 <p align="center">
   <img src="sensor.jpg" alt="Suspension Sensor" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
