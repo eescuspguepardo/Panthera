@@ -15,7 +15,7 @@ The suspension sensor is highly stable and accurate, and as such, it was not nec
 - Suspension sensor photo (still need to take the sensor photo):
 
 <p align="center">
-  <img src="" alt="Suspension Sensor" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
+  <img src="sensor.jpg" alt="Suspension Sensor" width="600" style="display: block; margin-left: auto; margin-right: auto;"/>
 </p>
 
 <br>
