@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/eescuspguepardo/Panthera/blob/main/PANTHERA_Logotype.png" alt=" " />
+  <img src="PANTHERA_Logotype.png" alt=" " />
 </p>
 
 <p align="center">
