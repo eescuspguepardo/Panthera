@@ -1,0 +1,51 @@
+// --------------------------------------------------------------------------
+/* EESC - USP Guepardo / Lucas Bosso de Mello
+   Código para comunicação serial entre o Arduino e a interface da Unity
+   27/08/2024
+*/
+
+// --------------------------------------------------------------------------
+// Inclusão de bibliotecas
+using UnityEngine;
+using System.IO.Ports; // biblioteca para fazer a comunicação serial
+using System;
+
+// --------------------------------------------------------------------------
+public class Arduino : MonoBehaviour
+{
+    public string portName; //  alterar porta selecionada "COM8", por exemplo, na interface da Unity
+    public int baudRate = 9600; // configurar o mesmo do Arduino
+    private SerialPort serialPort; // declara um objeto
+
+    // função de inicialização
+    void Start()
+    {
+        serialPort = new SerialPort(portName, baudRate); // inicializa o objeto
+        serialPort.Open(); // abre a conexão serial
+    }
+
+    // função repetida em loop
+    void Update()
+    {
+        if(serialPort.IsOpen) // verifica se a porta está aberta
+        {
+            string data = serialPort.ReadLine(); // armazena os dados de uma linha enviados via serial
+            Debug.Log("Dados recebidos da porta serial: " + data); // imprime os dados
+
+            string[] values = data.Split(','); // divide os dados, usando a vírgula como delimitador
+            if (values.Length == 2) // verifica se linha contém dois valores (deve ser alterado de acordo com a quantidade de sensores)
+            {
+                // transforma os dados dos sensores de string para float
+                // as divisões por 100 e -100 se devem pela base de coordenadas da unity
+                float Sensor1Value = (float.Parse(values[0])) / 100;
+                float Sensor2Value = (float.Parse(values[1])) / -100; 
+
+                // imprime os ddaos
+                Debug.Log("Valor sensor Pitch: " + Sensor1Value); 
+                Debug.Log("Valor sensor Roll: " + Sensor2Value); 
+
+                transform.eulerAngles = new Vector3(Sensor2Value, 0, Sensor1Value); // transforma os valores em Roll, Pitch e Yaw
+             } 
+        }
+    }
+}
